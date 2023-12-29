@@ -1,3 +1,4 @@
-# Personal Project
 
-**Hello World !!!** This repository will serve as the place for me develop my own personal website. Let's get to it! 🚀🚀🚀
+# My Personal Website
+
+**Hello World!** Allow me to introduce myself. My name is Vincent Suhardi and this repo will serve to develop my personal website. Let's get started . . . 🚀🚀🚀
