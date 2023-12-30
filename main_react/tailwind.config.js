@@ -4,7 +4,11 @@ export const content = [
   "./src/**/*.{js,jsx,ts,tsx}",
 ];
 export const theme = {
-  extend: {},
+  extend: {
+    fontFamily: {
+      'primary': ['Kanit']
+    }
+  },
 };
 export const plugins = [];
 
