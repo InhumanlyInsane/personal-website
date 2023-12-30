@@ -1,14 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 
-export const content = [
-  "./src/**/*.{js,jsx,ts,tsx}",
-];
-export const theme = {
-  extend: {
-    fontFamily: {
-      'primary': ['Kanit']
-    }
+import withMT from "@material-tailwind/react/utils/withMT";
+
+export default withMT({
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        'logo': ['Kanit'],
+        'primary': ['Urbanist']
+      }
+    },
   },
-};
-export const plugins = [];
+  plugins: [],
+});
 
