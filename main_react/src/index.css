@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Playfair+Display&family=Urbanist&display=swap');
 
 body {
   margin: 0;
@@ -15,4 +15,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* hide default web scrollbar */
+::-webkit-scrollbar {
+  display: none;
 }

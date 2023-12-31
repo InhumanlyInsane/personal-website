@@ -10,7 +10,8 @@ export default withMT({
     extend: {
       fontFamily: {
         'logo': ['Kanit'],
-        'primary': ['Urbanist']
+        'primary': ['Urbanist'],
+        'fancy': ['Playfair Display']
       }
     },
   },
