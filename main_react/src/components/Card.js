@@ -6,7 +6,7 @@ import {
   
 export function CardItem({ icon, title, description }) {
   return (
-    <Card className="mt-6 w-[300px] mb-20">
+    <Card className="mt-6 w-[300px] mb-20" style={ {background: "linear-gradient(to right bottom, #274060, #1B2845"} }>
       <CardBody>
         {icon && (
           <img
@@ -15,10 +15,13 @@ export function CardItem({ icon, title, description }) {
             className="mb-4 h-12 w-12"
           />
         )}
-        <Typography variant="h5" color="blue-gray" className="mb-2">
+        <Typography variant="h5" color="white" className="mb-2 font-primary">
           {title}
         </Typography>
-        <Typography className="text-justify">
+
+        <hr className="border-t border-white mb-2 w-[250px]" />
+
+        <Typography className="text-justify font-primary" color="white">
           {description}
         </Typography>
       </CardBody>

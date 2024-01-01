@@ -13,7 +13,7 @@ class AboutMe extends React.Component {
                 <div className='flex justify-between w-full'>
 
                     <CardItem 
-                        icon='graduation-cap.png'
+                        icon='education.png'
                         title="Educational Journey"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien massa, convallis tincidunt dignissim nec, malesuada et felis."
                     />
