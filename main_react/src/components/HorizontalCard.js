@@ -22,20 +22,20 @@ import {
         </CardHeader>
 
         <CardBody className="w-[500px] flex flex-col justify-center">
-          <Typography variant="h6" color="gray" className="mb-4 uppercase">
+          <Typography variant="h6" className="mb-4 uppercase" style={{color: "#EFF1F3"}}>
             startups
           </Typography>
-          <Typography variant="h4" color="blue-gray" className="mb-2">
+          <Typography variant="h4" color="white" className="mb-2">
             Lyft launching cross-platform service this week
           </Typography>
-          <Typography color="gray" className="mb-8 font-normal text-justify">
+          <Typography className="mb-8 font-normal text-justify" style={{color: "#DBD3D8"}}>
             Like so many organizations these days, Autodesk is a company in
             transition. It was until recently a traditional boxed software company
             selling licenses. Yet its own business model disruption is only part
             of the story
           </Typography>
-          <a href="#" className="inline-block">
-            <Button variant="text" className="flex items-center gap-2">
+          {/* <a href="#" className="inline-block"> */}
+            <Button variant="outlined" className="flex items-center gap-1 w-[150px] flex justify-center" color="white">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ import {
                 />
               </svg>
             </Button>
-          </a> 
+          {/* </a>  */}
         </CardBody>
       </Card>
     );

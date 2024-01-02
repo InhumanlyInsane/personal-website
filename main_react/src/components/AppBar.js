@@ -13,7 +13,7 @@ export function AppBar() {
             />
             <h1 className="text-2xl font-logo text-white mr-1">vincent suhardi</h1>
 
-            <div className="border-l border-gray-300 h-6 mx-4"></div>
+            <div className="border-l border-gray-300 h-6 mx-4"></div> 
 
             {/* Navigation links */}
             <ul className="flex space-x-6 text-white font-bold ml-1">

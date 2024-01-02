@@ -3,12 +3,16 @@ import {
 } from "@material-tailwind/react"; 
 import { HorizontalCard } from "./HorizontalCard";
 
-export function CarouselCard() {
+export function CarouselCard({cardCount}) {
+
+  const cards = Array.from({ length: cardCount }, (_, index) => (
+    <HorizontalCard key={index} />
+  ));
 
   return (
 
     <Carousel
-      className="rounded-xl h-[400px] w-[900px] mb-20"
+      className="rounded-xl h-[400px] w-full mb-[90px]"
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (
@@ -24,8 +28,7 @@ export function CarouselCard() {
       )}
     >
 
-      <HorizontalCard />
-      <HorizontalCard />
+      {cards}
 
     </Carousel>
   );

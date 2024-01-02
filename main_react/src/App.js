@@ -1,5 +1,6 @@
 import AboutMe from "./AboutMe";
 import ProjOrg from "./ProjOrg";
+import ScrollToTop from "react-scroll-to-top";
 import { AppBar } from "./components/AppBar";
 import './index.css';
 
@@ -15,16 +16,17 @@ function App() {
     <div className="relative" style={gradientStyle}>
         {/* Include AppBar */}
         <AppBar />
+        <ScrollToTop smooth className="flex justify-center items-center bg-gradient-to-br from-cyan-400 to-green-400" color="white" width="20" height="20"/>
 
         {/* Header Content */}
         <div className="text-white text-left ml-20 mr-20 flex items-center justify-between">
             <div style={{width: '65%'}}>
                 <h1 className="text-5xl font-bold font-primary mt-20">Developing & Innovating</h1>
-                <h1 className="text-7xl font-primary font-bold mt-5" style={{ color: '#66FCF1' }}>The World</h1>
+                <h1 className="text-7xl font-primary font-bold mt-5" style={{ color: '#3BBA9C' }}>The World</h1>
                 <p className="text-2xl mt-5 font-primary text-justify">
-                Hello World! I'm <span style={{ borderBottom: '2px solid #66FCF1' }}>Vincent Suhardi</span>, 
-                <span style={{color: '#66FCF1'}}> a passionate and curious learner </span> who loves to explore the 
-                possibilities in the tech industry, especially in <span style={{color: '#66FCF1'}}> artificial intelligence 
+                Hello World! I'm <span style={{ borderBottom: '2px solid #3BBA9C' }}>Vincent Suhardi</span>, 
+                <span style={{color: '#3BBA9C'}}> a passionate and curious learner </span> who loves to explore the 
+                possibilities in the tech industry, especially in <span style={{color: '#3BBA9C'}}> artificial intelligence 
                 and software engineering</span>. This website will serve as my personal project that tells you all about me, 
                 pleased to be your acquaintance!
                 </p>

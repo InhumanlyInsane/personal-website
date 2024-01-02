@@ -6,16 +6,10 @@ import {
   
 export function CardItem({ icon, title, description }) {
   return (
-    <Card className="mt-6 w-[300px] mb-20" style={ {background: "linear-gradient(to right bottom, #274060, #1B2845"} }>
+    <Card className="mt-6 w-[300px] mb-20" style={ {background: "linear-gradient(to right bottom, #2E3047, #43455C"} }>
       <CardBody>
-        {icon && (
-          <img
-            src={process.env.PUBLIC_URL + icon}
-            alt="Icon"
-            className="mb-4 h-12 w-12"
-          />
-        )}
-        <Typography variant="h5" color="white" className="mb-2 font-primary">
+        {icon}
+        <Typography variant="h5" style={{ color: '#3BBA9C' }} className="mb-2 font-primary">
           {title}
         </Typography>
 
