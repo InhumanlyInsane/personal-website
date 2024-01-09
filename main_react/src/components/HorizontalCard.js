@@ -25,7 +25,7 @@ import {
           <Typography variant="h6" className="mb-4 uppercase" style={{color: "#EFF1F3"}}>
             {orgName}
           </Typography>
-          <Typography variant="h4" color="white" className="mb-2">
+          <Typography variant="h4" color="white" className="mb-2" style={{color: "#3BBA9C"}}>
             {heading}
           </Typography>
           <Typography className="mb-4 font-normal text-justify" style={{color: "#DBD3D8"}}>

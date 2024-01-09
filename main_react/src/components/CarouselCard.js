@@ -3,11 +3,7 @@ import {
 } from "@material-tailwind/react"; 
 import { HorizontalCard } from "./HorizontalCard";
 
-export function CarouselCard({cardCount}) {
-
-  // const cards = Array.from({ length: cardCount }, (_, index) => (
-  //   <HorizontalCard key={index} />
-  // ));
+export function CarouselCard() {
 
   return (
 
@@ -43,15 +39,22 @@ export function CarouselCard({cardCount}) {
         orgName="Desa Binaan KMBUI 2023"
         heading="Staff of Documentation & MC"
         description="
-        Desa Binaan, a university-led initiative, uplifts Dusun Krecek village by fostering familial bonds, promoting 
-        social \cohesion, and supporting the local economy through activities and marketing of their exceptional coffee."
+        At Desa Binaan, I enhanced the initiative's online presence through captivating Instagram posts, documented 
+        significant moments with precision, and led as the Master of Ceremony during the peak event. Desa Binaan uplifts 
+        Dusun Krecek village, fostering community bonds and supporting the local economy through the promotion of 
+        exceptional coffee."
       />
 
       <HorizontalCard
         imageUrl={process.env.PUBLIC_URL + '/ppmb1.JPG'}
         orgName="PPMB KMBUI 2023"
         heading="Staff of Events & MC"
-        description="Your description text here."
+        description="
+        At PPMB, a non-funded event by KMBUI for newcoming UI students, I served as MC, 
+        skillfully engaging students during their orientation. Additionally, I demonstrated proficient event management 
+        by coordinating and executing a trilogy of events seamlessly, catering to both online and offline platforms. 
+        PPMB aims to guide and support new students, ensuring a smooth integration into the institution for a fulfilling 
+        college experience."
       />
 
     </Carousel>
