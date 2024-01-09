@@ -5,9 +5,9 @@ import { HorizontalCard } from "./HorizontalCard";
 
 export function CarouselCard({cardCount}) {
 
-  const cards = Array.from({ length: cardCount }, (_, index) => (
-    <HorizontalCard key={index} />
-  ));
+  // const cards = Array.from({ length: cardCount }, (_, index) => (
+  //   <HorizontalCard key={index} />
+  // ));
 
   return (
 
@@ -28,7 +28,31 @@ export function CarouselCard({cardCount}) {
       )}
     >
 
-      {cards}
+      <HorizontalCard
+        imageUrl={process.env.PUBLIC_URL + '/aic.png'}
+        orgName="AIC COMPFEST 15"
+        heading="Staff of Events & MC"
+        description="The AI Innovation Challenge (AIC) is a competition held by BEM Fasilkom UI that is centered around 
+        utilizing Machine Learning or Deep Learning to develop innovations aligned with the specified theme. Here, I 
+        facilitated e-health AI speaker presentations, managed event logistics and MC scripts, and supervised mentors 
+        to ensure a smooth competition experience."
+      />
+
+      <HorizontalCard
+        imageUrl={process.env.PUBLIC_URL + '/desbin.png'}
+        orgName="Desa Binaan KMBUI 2023"
+        heading="Staff of Documentation & MC"
+        description="
+        Desa Binaan, a university-led initiative, uplifts Dusun Krecek village by fostering familial bonds, promoting 
+        social \cohesion, and supporting the local economy through activities and marketing of their exceptional coffee."
+      />
+
+      <HorizontalCard
+        imageUrl={process.env.PUBLIC_URL + '/ppmb1.JPG'}
+        orgName="PPMB KMBUI 2023"
+        heading="Staff of Events & MC"
+        description="Your description text here."
+      />
 
     </Carousel>
   );

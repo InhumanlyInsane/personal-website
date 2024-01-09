@@ -2,18 +2,16 @@ import AboutMe from "./AboutMe";
 import ProjOrg from "./ProjOrg";
 import ScrollToTop from "react-scroll-to-top";
 import { AppBar } from "./components/AppBar";
-import './index.css';
 
 function App() {
   
-    const gradientStyle = {
-        background: `linear-gradient(to bottom, #0B0C10, #1F2833)`,
-        minHeight: '100vh'
-    };
-
+    // const gradientStyle = {
+    //     background: `linear-gradient(to bottom, #0B0C10, #1F2833)`,
+    //     minHeight: '100vh'
+    // };
 
     return (
-    <div className="relative" style={gradientStyle}>
+    <div className="relative">
         {/* Include AppBar */}
         <AppBar />
         <ScrollToTop smooth className="flex justify-center items-center bg-gradient-to-br from-cyan-400 to-green-400" color="white" width="20" height="20"/>

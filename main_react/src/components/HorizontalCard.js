@@ -6,7 +6,7 @@ import {
     Button,
   } from "@material-tailwind/react";
    
-  export function HorizontalCard() {
+  export function HorizontalCard({ imageUrl, orgName, heading, description }) {
     return (
       <Card className="w-full h-full mr-5 flex-row" style={ {background: "linear-gradient(to right bottom, #274060, #1B2845"} }>
         <CardHeader
@@ -15,24 +15,21 @@ import {
           className="m-0 w-2/5 shrink-0 rounded-r-none"
         >
           <img
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+            src={imageUrl}
             alt="card"
             className="h-full w-full object-cover"
           />
         </CardHeader>
 
-        <CardBody className="w-[500px] flex flex-col justify-center">
+        <CardBody className="w-[550px] flex flex-col justify-center">
           <Typography variant="h6" className="mb-4 uppercase" style={{color: "#EFF1F3"}}>
-            startups
+            {orgName}
           </Typography>
           <Typography variant="h4" color="white" className="mb-2">
-            Lyft launching cross-platform service this week
+            {heading}
           </Typography>
-          <Typography className="mb-8 font-normal text-justify" style={{color: "#DBD3D8"}}>
-            Like so many organizations these days, Autodesk is a company in
-            transition. It was until recently a traditional boxed software company
-            selling licenses. Yet its own business model disruption is only part
-            of the story
+          <Typography className="mb-4 font-normal text-justify" style={{color: "#DBD3D8"}}>
+            {description}
           </Typography>
           {/* <a href="#" className="inline-block"> */}
             <Button variant="outlined" className="flex items-center gap-1 w-[150px] flex justify-center" color="white">
