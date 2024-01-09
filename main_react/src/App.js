@@ -1,14 +1,10 @@
-import AboutMe from "./AboutMe";
-import ProjOrg from "./ProjOrg";
+import AboutMe from "./sections/AboutMe";
+import ProjOrg from "./sections/ProjOrg";
 import ScrollToTop from "react-scroll-to-top";
 import { AppBar } from "./components/AppBar";
+import Skills from "./sections/Skills";
 
 function App() {
-  
-    // const gradientStyle = {
-    //     background: `linear-gradient(to bottom, #0B0C10, #1F2833)`,
-    //     minHeight: '100vh'
-    // };
 
     return (
     <div className="relative">
@@ -48,6 +44,9 @@ function App() {
 
         {/* Projects & Organization Content */}
         <ProjOrg />
+
+        {/* Skills */}
+        <Skills />
 
     </div>
     );
