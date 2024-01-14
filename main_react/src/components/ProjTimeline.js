@@ -56,13 +56,13 @@ import {
                 <div className="w-full h-full ml-10 mr-10 mt-10">
                     <img
                         className="rounded-xl object-center shadow-xl shadow-blue-gray-900/50 border-2 border-black"
-                        src={process.env.PUBLIC_URL + '/cv_project1.jpeg'}
+                        src={process.env.PUBLIC_URL + '/image/cv_project1.jpeg'}
                         alt="Profile"
                     />
 
                     <img
                         className="ml-5 mt-[-50px] rounded-xl object-center shadow-xl shadow-blue-gray-900/50 border-2 border-black relative"
-                        src={process.env.PUBLIC_URL + '/cv_project2.jpeg'}
+                        src={process.env.PUBLIC_URL + '/image/cv_project2.jpeg'}
                         alt="Profile"
                     />
                 </div>
@@ -110,7 +110,7 @@ import {
                 <div className="w-full h-full ml-10 mr-10 mt-10">
                     <img
                         className="rounded-xl object-center shadow-xl shadow-blue-gray-900/50"
-                        src={process.env.PUBLIC_URL + '/tableau_dashboard.png'}
+                        src={process.env.PUBLIC_URL + '/image/tableau_dashboard.png'}
                         alt="Tableau Dashboard"
                     />
                 </div>
@@ -156,7 +156,7 @@ import {
                 <div className="w-full h-full ml-10 mr-10">
                     <img
                         className="rounded-xl object-center shadow-xl shadow-blue-gray-900/50"
-                        src={process.env.PUBLIC_URL + '/web-showcase.jpg'}
+                        src={process.env.PUBLIC_URL + '/image/web-showcase.jpg'}
                         alt="Personal Website"
                     />
                 </div>

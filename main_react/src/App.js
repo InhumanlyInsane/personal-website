@@ -32,7 +32,7 @@ function App() {
                 <figure className="relative w-64 h-64 mt-20 mr-10"> 
                     <img
                         className="h-full w-full rounded-xl object-cover object-center"
-                        src={process.env.PUBLIC_URL + '/main_pfp.jpg'}
+                        src={process.env.PUBLIC_URL + '/image/main_pfp.jpg'}
                         alt="Profile"
                     />
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from '@iconify/react';
 import {
   Navbar,
   MobileNav,
@@ -24,8 +25,8 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
+        color="white"
+        className="p-1 font-logo text-base hover:text-gray-300"
       >
         <a href="/#" className="flex items-center">
           Home
@@ -35,8 +36,8 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
+        color="white"
+        className="p-1 font-logo text-base hover:text-gray-300"
       >
         <a href="/#" className="flex items-center">
           About Me
@@ -46,8 +47,8 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
+        color="white"
+        className="p-1 font-logo text-base hover:text-gray-300"
       >
         <a href="/#" className="flex items-center">
           Projects
@@ -57,8 +58,8 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
+        color="white"
+        className="p-1 font-logo text-base hover:text-gray-300"
       >
         <a href="/#" className="flex items-center">
           Organizations
@@ -68,8 +69,8 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
+        color="white"
+        className="p-1 font-logo text-base hover:text-gray-300"
       >
         <a href="/#" className="flex items-center">
           Awards
@@ -79,8 +80,8 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
+        color="white"
+        className="p-1 font-logo text-base hover:text-gray-300"
       >
         <a href="/#" className="flex items-center">
           Certifications
@@ -93,81 +94,44 @@ export function StickyNavbar() {
   return (
     <Navbar className="sticky top-0 z-10 rounded-none px-8 h-12" color="teal" variant="gradient">
         <div className="flex items-center justify-between text-blue-gray-900 h-full">
+          <div className="flex gap-4 h-full mr-4 items-center">
+              <Avatar
+              src={process.env.PUBLIC_URL + '/image/lamp_cover.jpg'}
+              alt="lamp_avatar"
+              withBorder={true}
+              size="sm"
+              />
 
-            <div className="flex gap-4 h-full mr-4 items-center">
-                <Avatar
-                src={process.env.PUBLIC_URL + '/image/lamp_cover.jpg'}
-                alt="lamp_avatar"
-                withBorder={true}
-                size="sm"
-                />
+              <Typography
+              as="a"
+              href="#"
+              className="cursor-pointer font-logo text-white text-lg"
+              >
+                  vincent_suhardi
+              </Typography> 
+          </div>
 
-                <Typography
-                as="a"
-                href="#"
-                className="cursor-pointer font-logo text-white text-lg"
-                >
-                    vincent_suhardi
-                </Typography> 
+          <div className="flex items-center gap-4">
+            <div className="mr-2 hidden lg:block">{navList}</div>
+
+            <div className="border-l border-white mr-2 h-6"></div>
+            
+            <div className="flex items-center gap-0.5">
+              <IconButton variant="text">
+                <Icon icon="mdi:instagram" width="30" height="30" color="white"/>
+              </IconButton>
+              <IconButton variant="text">
+                <Icon icon="mdi:linkedin" width="30" height="30" color="white"/>
+              </IconButton>
+              <IconButton variant="text">
+                <Icon icon="mdi:github" width="30" height="30" color="white"/>
+              </IconButton>
             </div>
 
-            <div className="flex items-center gap-4">
-            <div className="mr-4 hidden lg:block">{navList}</div>
-            <div className="flex items-center gap-x-1">
-                <Button
-                variant="text"
-                size="sm"
-                className="hidden lg:inline-block"
-                >
-                <span>Log In</span>
-                </Button>
-                <Button
-                variant="gradient"
-                size="sm"
-                className="hidden lg:inline-block"
-                >
-                <span>Sign in</span>
-                </Button>
-            </div>
-            <IconButton
-                variant="text"
-                className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-                ripple={false}
-                onClick={() => setOpenNav(!openNav)}
-            >
-                {openNav ? (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    className="h-6 w-6"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                    />
-                </svg>
-                ) : (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                >
-                    <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                    />
-                </svg>
-                )}
-            </IconButton>
-            </div>
+
+          </div>
         </div>
+
         <MobileNav open={openNav}>
             {navList}
             <div className="flex items-center gap-x-1">
@@ -179,6 +143,7 @@ export function StickyNavbar() {
             </Button>
             </div>
         </MobileNav>
+
     </Navbar>
   );
 }

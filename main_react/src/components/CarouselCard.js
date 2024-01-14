@@ -25,7 +25,7 @@ export function CarouselCard() {
     >
 
       <HorizontalCard
-        imageUrl={process.env.PUBLIC_URL + '/aic.png'}
+        imageUrl={process.env.PUBLIC_URL + '/image/aic.png'}
         orgName="AIC COMPFEST 15"
         heading="Staff of Events & MC"
         description="The AI Innovation Challenge (AIC) is a competition held by BEM Fasilkom UI that is centered around 
@@ -35,7 +35,7 @@ export function CarouselCard() {
       />
 
       <HorizontalCard
-        imageUrl={process.env.PUBLIC_URL + '/desbin.png'}
+        imageUrl={process.env.PUBLIC_URL + '/image/desbin.png'}
         orgName="Desa Binaan KMBUI 2023"
         heading="Staff of Documentation & MC"
         description="
@@ -46,7 +46,7 @@ export function CarouselCard() {
       />
 
       <HorizontalCard
-        imageUrl={process.env.PUBLIC_URL + '/ppmb1.JPG'}
+        imageUrl={process.env.PUBLIC_URL + '/image/ppmb1.JPG'}
         orgName="PPMB KMBUI 2023"
         heading="Staff of Events & MC"
         description="
