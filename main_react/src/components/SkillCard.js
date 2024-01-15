@@ -23,23 +23,24 @@ export function SkillCard({ firstIcon, secondIcon, iconSize, skill, specific, ci
                 )}
             </div>
 
-        <CardHeader
-            color="transparent"
-            floated={false}
-            shadow={false}
-            className="flex items-center gap-4"
-        >
-            <div className="flex w-full flex-col gap-0.5">
-                <div className="flex items-center justify-between">
-                    <Typography variant="h4" style={{color: "#3BBA9C"}} className={`font-primary text-xl`}>
-                        {skill}
+            <CardHeader
+                color="transparent"
+                floated={false}
+                shadow={false}
+                className="flex items-center gap-4"
+            >
+                <div className="flex w-full flex-col gap-0.5">
+                    <div className="flex items-center justify-between">
+                        <Typography variant="h4" style={{color: "#3BBA9C"}} className={`font-primary text-xl`}>
+                            {skill}
+                        </Typography>
+                    </div>
+                    <Typography style={{color: "#EFF1F3"}} className="font-primary">
+                        {specific}
                     </Typography>
                 </div>
-                <Typography style={{color: "#EFF1F3"}} className="font-primary">
-                    {specific}
-                </Typography>
-            </div>
-        </CardHeader>
+                
+            </CardHeader>
         </Card>
     );
 }
