@@ -26,20 +26,20 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-logo text-base hover:text-gray-300"
+        className="p-1 font-logo text-base"
       >
-        <a href="/#" className="flex items-center">
-          Home
-        </a>
+          <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
+            Home
+          </a>
       </Typography>
 
       <Typography
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-logo text-base hover:text-gray-300"
+        className="p-1 font-logo text-base"
       >
-        <a href="/#" className="flex items-center">
+        <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
           About Me
         </a>
       </Typography>
@@ -48,9 +48,9 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-logo text-base hover:text-gray-300"
+        className="p-1 font-logo text-base"
       >
-        <a href="/#" className="flex items-center">
+        <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
           Projects
         </a>
       </Typography>
@@ -59,9 +59,9 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-logo text-base hover:text-gray-300"
+        className="p-1 font-logo text-base"
       >
-        <a href="/#" className="flex items-center">
+        <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
           Organizations
         </a>
       </Typography>
@@ -70,9 +70,9 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-logo text-base hover:text-gray-300"
+        className="p-1 font-logo text-base"
       >
-        <a href="/#" className="flex items-center">
+        <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
           Awards
         </a>
       </Typography>
@@ -81,9 +81,9 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="white"
-        className="p-1 font-logo text-base hover:text-gray-300"
+        className="p-1 font-logo text-base"
       >
-        <a href="/#" className="flex items-center">
+        <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
           Certifications
         </a>
       </Typography>

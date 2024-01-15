@@ -18,7 +18,7 @@ class ProjOrg extends React.Component {
 
                 </div>
 
-                <h1 className="text-5xl font-bold font-primary mb-2 ml-20 mr-20 flex justify-end">Organization Experiences</h1>
+                <h1 className="text-5xl font-bold font-primary mb-2 ml-20 mr-20 flex justify-end">Organizations</h1>
                 <div className='flex justify-center ml-20 mr-20 mt-6'>
                     <CarouselCard />
                 </div>

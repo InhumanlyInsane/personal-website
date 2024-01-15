@@ -5,6 +5,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Skills from "./sections/Skills";
 import React from "react";
 import { StickyNavbar } from "./components/Navbar";
+import Certifications from "./sections/Certifications";
 
 function App() {
 
@@ -50,6 +51,9 @@ function App() {
 
             {/* Skills */}
             <Skills />
+
+            {/* Certifications */}
+            <Certifications />
 
         </div>
     );

@@ -13,7 +13,6 @@ class Skills extends React.Component {
                         iconSize={"50px"}
                         skill={"Data Manipulation"}
                         specific={"Pandas"}
-                        description={"Lorem ipsum dolor sit amet."}
                         circled={true}
                         twoIcons={false}
                     />
@@ -23,7 +22,6 @@ class Skills extends React.Component {
                         iconSize={"50px"}
                         skill={"Machine Learning"}
                         specific={"scikit-learn"}
-                        description={"Lorem ipsum dolor sit amet."}
                         circled={false}
                         twoIcons={false}
                     />
@@ -34,7 +32,6 @@ class Skills extends React.Component {
                         iconSize={"50px"}
                         skill={"Deep Learning"}
                         specific={"Keras & TensorFlow"}
-                        description={"Lorem ipsum dolor sit amet."}
                         circled={false}
                         twoIcons={true}
                     />
@@ -44,7 +41,6 @@ class Skills extends React.Component {
                         iconSize={"50px"}
                         skill={"Computer Vision"}
                         specific={"OpenCV"}
-                        description={"Lorem ipsum dolor sit amet."}
                         circled={false}
                     />
 
@@ -54,7 +50,6 @@ class Skills extends React.Component {
                         iconSize={"50px"}
                         skill={"Data Visualization"}
                         specific={"Matplotlib & Seaborn"}
-                        description={"Lorem ipsum dolor sit amet."}
                         circled={false}
                         twoIcons={true}
                     />
@@ -64,7 +59,6 @@ class Skills extends React.Component {
                         iconSize={"50px"}
                         skill={"Data Analytics"}
                         specific={"Tableau Dashboards"}
-                        description={"Lorem ipsum dolor sit amet."}
                         circled={true}
                     />
 
@@ -74,7 +68,6 @@ class Skills extends React.Component {
                         iconSize={"50px"}
                         skill={"High-Level Programming"}
                         specific={"Java & Python"}
-                        description={"Lorem ipsum dolor sit amet."}
                         circled={false}
                         twoIcons={true}
                     />
@@ -85,7 +78,6 @@ class Skills extends React.Component {
                         iconSize={"50px"}
                         skill={"Frontend Engineering"}
                         specific={"ReactJS & TailwindCSS"}
-                        description={"Lorem ipsum dolor sit amet."}
                         circled={false}
                         twoIcons={true}
                     />

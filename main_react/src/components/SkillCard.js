@@ -1,17 +1,16 @@
 import {
     Card,
     CardHeader,
-    CardBody,
     Typography,
 } from "@material-tailwind/react";
 import { Icon } from '@iconify/react';
 
-export function SkillCard({ firstIcon, secondIcon, iconSize, skill, specific, description, circled, twoIcons }) {
+export function SkillCard({ firstIcon, secondIcon, iconSize, skill, specific, circled, twoIcons }) {
 
     return (
 
         
-        <Card shadow={false} className="w-[250px]" style={ {background: "linear-gradient(to right bottom, #2E3047, #43455C"} }>
+        <Card shadow={false} className="w-[250px] pb-6" style={ {background: "linear-gradient(to right bottom, #2E3047, #43455C"} }>
 
             <div className={`mt-[-20px] ml-5 flex flex-row gap-2`}>
                 <div className={circled ? `rounded-full bg-white w-[${iconSize}] flex justify-center items-center` : ''}>
@@ -32,7 +31,7 @@ export function SkillCard({ firstIcon, secondIcon, iconSize, skill, specific, de
         >
             <div className="flex w-full flex-col gap-0.5">
                 <div className="flex items-center justify-between">
-                    <Typography variant="h4" style={{color: "#3BBA9C"}} className="font-primary">
+                    <Typography variant="h4" style={{color: "#3BBA9C"}} className={`font-primary text-xl`}>
                         {skill}
                     </Typography>
                 </div>
@@ -41,11 +40,6 @@ export function SkillCard({ firstIcon, secondIcon, iconSize, skill, specific, de
                 </Typography>
             </div>
         </CardHeader>
-        <CardBody>
-            <Typography className="font-primary text-justify" style={{color: "#DBD3D8"}}>
-                {description}
-            </Typography>
-        </CardBody>
         </Card>
     );
 }
