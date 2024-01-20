@@ -11,44 +11,62 @@ class Certifications extends React.Component {
                 <div className="mt-6 grid grid-cols-3">
 
                     <div className="border-gray-500 border border-r-0 rounded-tl-lg">
-                        <CertCard roundedType={"rounded-tl-lg rounded-bl-none rounded-tr-none rounded-br-none"} />
+                        <CertCard 
+                        roundedType={"rounded-tl-lg rounded-bl-none rounded-tr-none rounded-br-none"} 
+                        iconLogo="devicon:kaggle"
+                        imageUrl={process.env.PUBLIC_URL + "/image/certificates/compvis.png"}
+                        title={"Computer Vision"}
+                        />
                     </div>
                     <div className="border-gray-500 border">
-                        <CertCard roundedType={"rounded-none"} />
+                        <CertCard 
+                        roundedType={"rounded-none"} 
+                        iconLogo="devicon:kaggle"
+                        imageUrl={process.env.PUBLIC_URL + "/image/certificates/introDL.png"}
+                        title={"Intro to Deep Learning"}
+                        />
                     </div>
                     <div className="border-gray-500 border border-l-0 rounded-tr-lg">
-                        <CertCard roundedType={"rounded-tr-lg rounded-br-none rounded-tl-none rounded-bl-none"} />
+                        <CertCard 
+                        roundedType={"rounded-tr-lg rounded-br-none rounded-tl-none rounded-bl-none"} 
+                        iconLogo={"devicon:kaggle"}
+                        imageUrl={process.env.PUBLIC_URL + "/image/certificates/pandas.png"}
+                        title={"Pandas"}
+                        />
                     </div>
 
                     <div className="border-gray-500 border border-r-0 border-t-0 rounded-bl-lg">
-                        <CertCard roundedType={"rounded-bl-lg rounded-br-none rounded-tl-none rounded-tr-none"} />
+                        <CertCard 
+                        roundedType={"rounded-bl-lg rounded-br-none rounded-tl-none rounded-tr-none"} 
+                        iconLogo="simple-icons:datacamp"
+                        iconColor="#2dfe54"
+                        imageUrl={process.env.PUBLIC_URL + "/image/certificates/creatingDashboards.png"}
+                        title={"Creating Dashboards"}
+                        />
                     </div>
                     <div className="border-gray-500 border border-t-0">
-                        <CertCard roundedType={"rounded-none"} />
+                        <CertCard 
+                        roundedType={"rounded-none"}
+                        iconLogo="simple-icons:datacamp"
+                        iconColor="#2dfe54"
+                        imageUrl={process.env.PUBLIC_URL + "/image/certificates/dealingMissingData.png"}
+                        title={"Dealing with Missing Data"}
+                        />
                     </div>
                     <div className="border-gray-500 border border-t-0 border-l-0 rounded-br-lg">
-                        <CertCard roundedType={"rounded-br-lg rounded-bl-none rounded-tl-none rounded-bl-none"} />
+                        <CertCard 
+                        roundedType={"rounded-br-lg rounded-bl-none rounded-tl-none rounded-bl-none"} 
+                        iconLogo="simple-icons:datacamp"
+                        iconColor="#2dfe54"
+                        imageUrl={process.env.PUBLIC_URL + "/image/certificates/introSeaborn.png"}
+                        title={"Data Visualization with Seaborn"}
+                        />
                     </div>
+
+
 
                 </div>
 
-                {/* <div className="mt-6 grid grid-cols-3 border border-gray-500 rounded-lg">
-                    <div className="border-r-[1px] border-gray-500">
-                        <CertCard roundedType={"rounded-tl-lg rounded-bl-lg rounded-tr-none rounded-br-none"}/>
-                    </div>
-                    <CertCard roundedType={"rounded-none"}/>
-                    <div className="border-l-[1px] border-gray-500">
-                        <CertCard roundedType={"rounded-tr-lg rounded-br-lg rounded-tl-none rounded-bl-none"}/>
-                    </div>
-
-                    <div className="border-r-[1px] border-gray-500">
-                        <CertCard roundedType={"rounded-tl-lg rounded-bl-lg rounded-tr-none rounded-br-none"}/>
-                    </div>
-                    <CertCard roundedType={"rounded-none"}/>
-                    <div className="border-l-[1px] border-gray-500">
-                        <CertCard roundedType={"rounded-tr-lg rounded-br-lg rounded-tl-none rounded-bl-none"}/>
-                    </div>
-                </div> */}
             </div>
 
         )
