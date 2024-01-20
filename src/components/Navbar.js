@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from '@iconify/react';
+import { RightDrawer } from "./Drawer";
 import {
   Navbar,
   MobileNav,
@@ -128,8 +129,11 @@ export function StickyNavbar() {
               </IconButton>
             </div>
 
+            {/* Drawer Navigation Button */}
+            <RightDrawer />
 
           </div>
+
         </div>
 
         <MobileNav open={openNav}>
