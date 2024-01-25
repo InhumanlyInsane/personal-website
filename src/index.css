@@ -22,3 +22,8 @@ code {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.lower-opacity {
+  opacity: 0.5; /* Set the desired opacity value */
+  transition: opacity 0.3s ease-in-out; /* Optional: Add a smooth transition effect */
+}

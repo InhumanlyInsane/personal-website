@@ -91,6 +91,7 @@ export function StickyNavbar() {
 
     </ul>
   );
+
  
   return (
     <Navbar className="sticky top-0 z-10 rounded-none px-8 h-12" color="teal" variant="gradient">
@@ -129,7 +130,6 @@ export function StickyNavbar() {
               </IconButton>
             </div>
 
-            {/* Drawer Navigation Button */}
             <RightDrawer />
 
           </div>

@@ -1,7 +1,6 @@
 import AboutMe from "./sections/AboutMe";
 import ProjOrg from "./sections/ProjOrg";
 import ScrollToTop from "react-scroll-to-top";
-// import { AppBar } from "./components/AppBar";
 import Skills from "./sections/Skills";
 import React from "react";
 import { StickyNavbar } from "./components/Navbar";
@@ -9,11 +8,14 @@ import Certifications from "./sections/Certifications";
 
 function App() {
 
+
     return (
 
         <div className="relative">
+
             {/* Include AppBar */}
             <StickyNavbar />
+
             <ScrollToTop smooth className="flex justify-center items-center bg-gradient-to-br from-cyan-400 to-green-400" color="white" width="20" height="20"/>
 
             {/* Header Content */}
