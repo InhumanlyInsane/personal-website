@@ -28,15 +28,19 @@ function App() {
                             sequence={[
                             "The World",
                             1000,
-                            "Technology",
+                            "Digital Transformation",
                             1000,
-                            "People",
+                            "Continuous Improvement",
                             1000,
+                            "Future Technologies",
+                            1000,
+                            "Artificial Intelligence",
+                            1000
                             ]}
                             speed={50}
                             repeat={Infinity}
                             style={{ color: '#3BBA9C' }}
-                            className="text-7xl font-primary font-bold"
+                            className="text-6xl font-primary font-bold"
                         />
                     </div>
                     {/* <h1 className="text-7xl font-primary font-bold mt-5" style={{ color: '#3BBA9C' }}>The World</h1> */}
@@ -51,7 +55,7 @@ function App() {
 
                 <figure className="relative w-64 h-64 mt-20 mr-10"> 
                     <img
-                        className="h-full w-full rounded-xl object-cover object-center"
+                        className="h-full w-full rounded-xl object-cover object-center z-0"
                         src={process.env.PUBLIC_URL + '/image/main_pfp.jpg'}
                         alt="Profile"
                     />
@@ -73,7 +77,6 @@ function App() {
 
             {/* Certifications */}
             <Certifications />
-
         </div>
     );
 }

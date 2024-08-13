@@ -7,7 +7,7 @@ import {
 import { Icon } from '@iconify/react';
 
    
-export function CertCard({ title, roundedType, imageUrl, iconLogo, iconColor }) {
+export function CertCard({ title, roundedType, imageUrl, iconLogo, iconColor, completion }) {
     return (
         <Card className={`overflow-hidden ${roundedType}`} style={ {background: "linear-gradient(to right bottom, #2E3047, #43455C"} }>
             <CardHeader
@@ -39,7 +39,7 @@ export function CertCard({ title, roundedType, imageUrl, iconLogo, iconColor }) 
      
                     </div>
                     <Typography className="font-primary text-white text-sm">
-                        Completed: January 10 2023
+                        Completed on: {completion}
                     </Typography>
                 </div>
                 

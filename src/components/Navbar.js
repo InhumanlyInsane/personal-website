@@ -1,4 +1,5 @@
 import React from "react";
+import '../index.css';
 import { Icon } from '@iconify/react';
 import { RightDrawer } from "./Drawer";
 import {
@@ -22,17 +23,6 @@ export function StickyNavbar() {
  
   const navList = (
     <ul className="mt-2 mb-4 flex flex-row gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-
-      <Typography
-        as="li"
-        variant="small"
-        color="white"
-        className="p-1 font-logo text-base"
-      >
-          <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
-            Home
-          </a>
-      </Typography>
 
       <Typography
         as="li"
@@ -94,7 +84,7 @@ export function StickyNavbar() {
 
  
   return (
-    <Navbar className="sticky top-0 z-10 rounded-none px-8 h-12" color="teal" variant="gradient">
+    <Navbar id="navbar" className="sticky top-0 z-10 rounded-none px-8 h-12" color="teal" variant="gradient">
         <div className="flex items-center justify-between text-blue-gray-900 h-full">
           <div className="flex gap-4 h-full mr-4 items-center">
               <Avatar
@@ -119,9 +109,6 @@ export function StickyNavbar() {
             <div className="border-l border-white mr-2 h-6"></div>
             
             <div className="flex items-center gap-0.5">
-              <IconButton variant="text">
-                <Icon icon="mdi:instagram" width="30" height="30" color="white"/>
-              </IconButton>
               <IconButton variant="text">
                 <Icon icon="mdi:linkedin" width="30" height="30" color="white"/>
               </IconButton>

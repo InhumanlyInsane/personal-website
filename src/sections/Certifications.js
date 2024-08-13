@@ -16,6 +16,7 @@ class Certifications extends React.Component {
                         iconLogo="devicon:kaggle"
                         imageUrl={process.env.PUBLIC_URL + "/image/certificates/compvis.png"}
                         title={"Computer Vision"}
+                        completion={"June 21, 2023"}
                         />
                     </div>
                     <div className="border-gray-500 border">
@@ -24,6 +25,7 @@ class Certifications extends React.Component {
                         iconLogo="devicon:kaggle"
                         imageUrl={process.env.PUBLIC_URL + "/image/certificates/introDL.png"}
                         title={"Intro to Deep Learning"}
+                        completion={"June 14, 2023"}
                         />
                     </div>
                     <div className="border-gray-500 border border-l-0 rounded-tr-lg">
@@ -32,6 +34,7 @@ class Certifications extends React.Component {
                         iconLogo={"devicon:kaggle"}
                         imageUrl={process.env.PUBLIC_URL + "/image/certificates/pandas.png"}
                         title={"Pandas"}
+                        completion={"January 23, 2023"}
                         />
                     </div>
 
@@ -42,6 +45,7 @@ class Certifications extends React.Component {
                         iconColor="#2dfe54"
                         imageUrl={process.env.PUBLIC_URL + "/image/certificates/creatingDashboards.png"}
                         title={"Creating Dashboards"}
+                        completion={"October 22, 2023"}
                         />
                     </div>
                     <div className="border-gray-500 border border-t-0">
@@ -51,6 +55,7 @@ class Certifications extends React.Component {
                         iconColor="#2dfe54"
                         imageUrl={process.env.PUBLIC_URL + "/image/certificates/dealingMissingData.png"}
                         title={"Dealing with Missing Data"}
+                        completion={"August 2, 2023"}
                         />
                     </div>
                     <div className="border-gray-500 border border-t-0 border-l-0 rounded-br-lg">
@@ -60,10 +65,9 @@ class Certifications extends React.Component {
                         iconColor="#2dfe54"
                         imageUrl={process.env.PUBLIC_URL + "/image/certificates/introSeaborn.png"}
                         title={"Data Visualization with Seaborn"}
+                        completion={"August 2, 2023"}
                         />
                     </div>
-
-
 
                 </div>
 

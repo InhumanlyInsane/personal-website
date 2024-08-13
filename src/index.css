@@ -23,7 +23,21 @@ code {
   display: none;
 }
 
-.lower-opacity {
-  opacity: 0.5; /* Set the desired opacity value */
-  transition: opacity 0.3s ease-in-out; /* Optional: Add a smooth transition effect */
+/* FOR THE DRAWER */
+.dim-background {
+  position: relative;
+  z-index: 1; /* Ensure the dimming effect is below the drawer */
+  transition: opacity 5s ease; 
+}
+
+.dim-background::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+  z-index: 2; /* Ensure the overlay is above the content but below the drawer */
+  transition: opacity 5s ease; 
 }
