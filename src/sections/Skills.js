@@ -20,11 +20,12 @@ class Skills extends React.Component {
                     
                     <SkillCard 
                         firstIcon={"skill-icons:scikitlearn-light"}
+                        secondIcon={"logos:numpy"}
                         iconSize={"50px"}
                         skill={"Machine Learning"}
-                        specific={"scikit-learn"}
+                        specific={"Scikit-Learn & NumPy"}
                         circled={false}
-                        twoIcons={false}
+                        twoIcons={true}
                     />
 
                     <SkillCard 
@@ -76,11 +77,13 @@ class Skills extends React.Component {
                     <SkillCard 
                         firstIcon={"vscode-icons:file-type-reactjs"}
                         secondIcon={"devicon:tailwindcss"}
+                        thirdIcon={"skill-icons:django"}
                         iconSize={"50px"}
-                        skill={"Frontend Engineering"}
-                        specific={"ReactJS & TailwindCSS"}
+                        skill={"Web Development"}
+                        specific={"ReactJS, TailwindCSS, Django"}
                         circled={false}
                         twoIcons={true}
+                        threeIcons={true}
                     />
 
                 </div>

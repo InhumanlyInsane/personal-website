@@ -4,6 +4,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Skills from "./sections/Skills";
 import React from "react";
 import { StickyNavbar } from "./components/Navbar";
+import { TypeAnimation } from "react-type-animation";
 import Certifications from "./sections/Certifications";
 
 function App() {
@@ -22,7 +23,23 @@ function App() {
             <div className="text-white text-left ml-20 mr-20 flex items-center justify-between">
                 <div style={{width: '65%'}}>
                     <h1 className="text-5xl font-bold font-primary mt-20">Developing & Innovating</h1>
-                    <h1 className="text-7xl font-primary font-bold mt-5" style={{ color: '#3BBA9C' }}>The World</h1>
+                    <div className="mt-5">
+                        <TypeAnimation
+                            sequence={[
+                            "The World",
+                            1000,
+                            "Technology",
+                            1000,
+                            "People",
+                            1000,
+                            ]}
+                            speed={50}
+                            repeat={Infinity}
+                            style={{ color: '#3BBA9C' }}
+                            className="text-7xl font-primary font-bold"
+                        />
+                    </div>
+                    {/* <h1 className="text-7xl font-primary font-bold mt-5" style={{ color: '#3BBA9C' }}>The World</h1> */}
                     <p className="text-2xl mt-5 font-primary text-justify">
                     Hello World! I'm <span style={{ borderBottom: '2px solid #3BBA9C' }}>Vincent Suhardi</span>, 
                     <span style={{color: '#3BBA9C'}}> a passionate and curious learner </span> who loves to explore the 

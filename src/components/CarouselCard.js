@@ -25,9 +25,19 @@ export function CarouselCard() {
     >
 
       <HorizontalCard
+        imageUrl={process.env.PUBLIC_URL + '/image/ristek-pic.png'}
+        orgName="RISTEK Fasilkom UI"
+        heading="Member of Data Science & Analytics SIG"
+        description="RISTEK is an independent organization operated by the students of the Faculty of Computer Science Universitas 
+        Indonesia that aims to cultivate students’ interests in the fields of science and technology. RISTEK's Data Science & Analytics 
+        SIG aims to accommodate students interested in Data Science & Analytics. Data Science & Analytics will focus more on the practical 
+        side of data science, readily applicable to various data science-related tasks."
+      />
+
+      <HorizontalCard
         imageUrl={process.env.PUBLIC_URL + '/image/aic.png'}
-        orgName="AIC COMPFEST 15"
-        heading="Staff of Events & MC"
+        orgName="AIC COMPFEST 16"
+        heading="Person in Charge (PIC) & Ex-Staff"
         description="The AI Innovation Challenge (AIC) is a competition held by BEM Fasilkom UI that is centered around 
         utilizing Machine Learning or Deep Learning to develop innovations aligned with the specified theme. Here, I 
         facilitated e-health AI speaker presentations, managed event logistics and MC scripts, and supervised mentors 

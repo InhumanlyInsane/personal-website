@@ -5,7 +5,7 @@ import {
 } from "@material-tailwind/react";
 import { Icon } from '@iconify/react';
 
-export function SkillCard({ firstIcon, secondIcon, iconSize, skill, specific, circled, twoIcons }) {
+export function SkillCard({ firstIcon, secondIcon, thirdIcon, iconSize, skill, specific, circled, twoIcons=false, threeIcons=false }) {
 
     return (
 
@@ -19,6 +19,11 @@ export function SkillCard({ firstIcon, secondIcon, iconSize, skill, specific, ci
                 {twoIcons && (
                   <div className={circled ? `rounded-full bg-white w-[${iconSize}] flex justify-center items-center ml-2` : 'ml-2'}>
                       <Icon icon={secondIcon} style={{ fontSize: iconSize }} />
+                  </div>
+                )}
+                {threeIcons && (
+                  <div className={circled ? `rounded-full bg-white w-[${iconSize}] flex justify-center items-center ml-2` : 'ml-2'}>
+                      <Icon icon={thirdIcon} style={{ fontSize: iconSize }} />
                   </div>
                 )}
             </div>
