@@ -10,10 +10,10 @@ class ProjOrg extends React.Component {
         return (
             <div className="text-white text-left flex flex-col">
 
-                <h1 className="text-5xl font-bold font-primary ml-20 mr-20 mb-2" id='projects'>Projects</h1>
+                <h1 className="cs:text-5xl xs:text-3xl font-bold font-primary cs:ml-20 cs:mr-20 cs:mb-2 xs:ml-8" id='projects'>Projects</h1>
                 <div className='mt-6 w-full h-full py-10 mb-20 flex items-center' style={ {background: "linear-gradient(to right bottom, #2E3047, #43455C"} }>
 
-                    <div className='ml-20'>
+                    <div className='cs:ml-20 xs:ml-4'>
                         <ProjectTimeline />
                     </div>
 

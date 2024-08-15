@@ -13,10 +13,11 @@ export default withMT({
         'primary': ['Urbanist'],
         'fancy': ['Playfair Display']
       },
-      backgroundImage: {
-        'gradient-to-b': 'linear-gradient(to bottom, #0B0C10, #1F2833)',
-      }
     },
+    screens: {
+      'xs': '320px',
+      'cs': '768px',
+    }
   },
   plugins: [],
 });

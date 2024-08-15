@@ -21,7 +21,7 @@ export function StickyNavbar({ scrollToSection }) {
   }, []);
  
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-row gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-2 mb-4 flex flex-row gap-2 lg:mb-0 lg:mt-0 items-center lg:gap-6">
 
       <Typography
         as="li"
@@ -148,17 +148,19 @@ export function StickyNavbar({ scrollToSection }) {
 
         </div>
 
-        <MobileNav open={openNav}>
-            {navList}
-            <div className="flex items-center gap-x-1">
+      {/* <MobileNav open={openNav}>
+        <div className="container mx-auto">
+          {navList}
+          <div className="flex items-center gap-x-1">
             <Button fullWidth variant="text" size="sm" className="">
-                <span>Log In</span>
+              <span>Log In</span>
             </Button>
             <Button fullWidth variant="gradient" size="sm" className="">
-                <span>Sign in</span>
+              <span>Sign in</span>
             </Button>
-            </div>
-        </MobileNav>
+          </div>
+        </div>
+      </MobileNav> */}
 
     </Navbar>
   );
