@@ -10,7 +10,7 @@ export function SkillCard({ firstIcon, secondIcon, thirdIcon, iconSize, skill, s
     return (
 
         
-        <Card shadow={false} className="w-[250px] pb-6" style={ {background: "linear-gradient(to right bottom, #2E3047, #43455C"} }>
+        <Card shadow={false} className="w-[250px] pb-6 hover:scale-110 transition ease-in-out" style={ {background: "linear-gradient(to right bottom, #2E3047, #43455C"} }>
 
             <div className={`mt-[-20px] ml-5 flex flex-row gap-2`}>
                 <div className={circled ? `rounded-full bg-white w-[${iconSize}] flex justify-center items-center` : ''}>

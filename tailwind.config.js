@@ -12,6 +12,9 @@ export default withMT({
         'logo': ['Kanit'],
         'primary': ['Urbanist'],
         'fancy': ['Playfair Display']
+      },
+      backgroundImage: {
+        'gradient-to-b': 'linear-gradient(to bottom, #0B0C10, #1F2833)',
       }
     },
   },

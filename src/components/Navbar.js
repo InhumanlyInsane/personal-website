@@ -1,7 +1,6 @@
 import React from "react";
 import '../index.css';
 import { Icon } from '@iconify/react';
-import { RightDrawer } from "./Drawer";
 import {
   Navbar,
   MobileNav,
@@ -11,7 +10,7 @@ import {
   Avatar,
 } from "@material-tailwind/react";
  
-export function StickyNavbar() {
+export function StickyNavbar({ scrollToSection }) {
   const [openNav, setOpenNav] = React.useState(false);
  
   React.useEffect(() => {
@@ -30,7 +29,11 @@ export function StickyNavbar() {
         color="white"
         className="p-1 font-logo text-base"
       >
-        <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
+        <a 
+          href="#about-me" 
+          className="duration-300 hover:text-gray-400 flex items-center"
+          onClick={(e) => { e.preventDefault(); scrollToSection('#about-me');}}
+        >
           About Me
         </a>
       </Typography>
@@ -41,7 +44,11 @@ export function StickyNavbar() {
         color="white"
         className="p-1 font-logo text-base"
       >
-        <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
+        <a 
+          href="#projects" 
+          className="duration-300 hover:text-gray-400 flex items-center"
+          onClick={(e) => { e.preventDefault(); scrollToSection('#projects');}}
+        >
           Projects
         </a>
       </Typography>
@@ -52,18 +59,11 @@ export function StickyNavbar() {
         color="white"
         className="p-1 font-logo text-base"
       >
-        <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
-          Organizations
-        </a>
-      </Typography>
-
-      <Typography
-        as="li"
-        variant="small"
-        color="white"
-        className="p-1 font-logo text-base"
-      >
-        <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
+        <a 
+          href="#awards" 
+          className="duration-300 hover:text-gray-400 flex items-center"
+          onClick={(e) => { e.preventDefault(); scrollToSection('#awards');}}
+        >
           Awards
         </a>
       </Typography>
@@ -74,8 +74,27 @@ export function StickyNavbar() {
         color="white"
         className="p-1 font-logo text-base"
       >
-        <a href="/#" className="duration-300 hover:text-gray-400 flex items-center">
-          Certifications
+        <a 
+          href="#organizations" 
+          className="duration-300 hover:text-gray-400 flex items-center"
+          onClick={(e) => { e.preventDefault(); scrollToSection('#organizations');}}
+        >
+          Organizations
+        </a>
+      </Typography>
+
+      <Typography
+        as="li"
+        variant="small"
+        color="white"
+        className="p-1 font-logo text-base"
+      >
+        <a 
+          href="#about-me" 
+          className="duration-300 hover:text-gray-400 flex items-center"
+          onClick={(e) => { e.preventDefault(); scrollToSection('#skillsets');}}
+        >
+          Skillsets
         </a>
       </Typography>
 
@@ -88,15 +107,17 @@ export function StickyNavbar() {
         <div className="flex items-center justify-between text-blue-gray-900 h-full">
           <div className="flex gap-4 h-full mr-4 items-center">
               <Avatar
-              src={process.env.PUBLIC_URL + '/image/lamp_cover.jpg'}
-              alt="lamp_avatar"
+              src={process.env.PUBLIC_URL + '/image/brain-logo.jpeg'}
+              alt="website icon"
               withBorder={true}
+              color="teal"
               size="sm"
               />
 
               <Typography
               as="a"
               href="#"
+              onClick={(e) => { e.preventDefault(); scrollToSection('#top')}}
               className="cursor-pointer font-logo text-white text-lg"
               >
                   vincent_suhardi
@@ -109,15 +130,19 @@ export function StickyNavbar() {
             <div className="border-l border-white mr-2 h-6"></div>
             
             <div className="flex items-center gap-0.5">
-              <IconButton variant="text">
-                <Icon icon="mdi:linkedin" width="30" height="30" color="white"/>
-              </IconButton>
-              <IconButton variant="text">
-                <Icon icon="mdi:github" width="30" height="30" color="white"/>
-              </IconButton>
+              <a href="https://www.linkedin.com/in/vincent-suhardi/" target="_blank">
+                <IconButton variant="text">
+                  <Icon icon="mdi:linkedin" width="30" height="30" color="white"/>
+                </IconButton>
+              </a>
+              <a href="https://github.com/InhumanlyInsane" target="_blank">
+                <IconButton variant="text">
+                  <Icon icon="mdi:github" width="30" height="30" color="white"/>
+                </IconButton>
+              </a>
             </div>
 
-            <RightDrawer />
+            {/* <RightDrawer /> */}
 
           </div>
 

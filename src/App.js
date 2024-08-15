@@ -2,20 +2,33 @@ import AboutMe from "./sections/AboutMe";
 import ProjOrg from "./sections/ProjOrg";
 import ScrollToTop from "react-scroll-to-top";
 import Skills from "./sections/Skills";
+import Certifications from "./sections/Certifications";
+import { Footer } from "./sections/Footer";
 import React from "react";
 import { StickyNavbar } from "./components/Navbar";
 import { TypeAnimation } from "react-type-animation";
-import Certifications from "./sections/Certifications";
 
 function App() {
+
+    // Scroll to section to avoid navbar
+    const scrollToSection = (sectionId) => {
+        const section = document.querySelector(sectionId);
+        const navbarHeight = document.getElementById('navbar').offsetHeight + 30;
+        const sectionPosition = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
+    
+        window.scrollTo({
+          top: sectionPosition,
+          behavior: 'smooth'
+        });
+    };    
 
 
     return (
 
-        <div className="relative">
+        <div className="relative" id="top">
 
             {/* Include AppBar */}
-            <StickyNavbar />
+            <StickyNavbar scrollToSection={scrollToSection} />
 
             <ScrollToTop smooth className="flex justify-center items-center bg-gradient-to-br from-cyan-400 to-green-400" color="white" width="20" height="20"/>
 
@@ -27,20 +40,20 @@ function App() {
                         <TypeAnimation
                             sequence={[
                             "The World",
-                            1000,
+                            3000,
                             "Digital Transformation",
-                            1000,
+                            3000,
                             "Continuous Improvement",
-                            1000,
+                            3000,
                             "Future Technologies",
-                            1000,
+                            3000,
                             "Artificial Intelligence",
-                            1000
+                            3000
                             ]}
                             speed={50}
                             repeat={Infinity}
-                            style={{ color: '#3BBA9C' }}
-                            className="text-6xl font-primary font-bold"
+                            // style={{ color: '#3BBA9C' }}
+                            className="text-6xl font-primary font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent"
                         />
                     </div>
                     {/* <h1 className="text-7xl font-primary font-bold mt-5" style={{ color: '#3BBA9C' }}>The World</h1> */}
@@ -65,18 +78,23 @@ function App() {
             </div>
 
             <hr className="border-gray-500 mx-20 my-20" />
-
+            
             {/* About Me Content */}
-            <AboutMe />
+            <div id="about-me">
+                <AboutMe />
+            </div>
 
             {/* Projects & Organization Content */}
             <ProjOrg />
 
             {/* Skills */}
-            <Skills />
+            <div id="skillsets">
+                <Skills />
+            </div>
 
-            {/* Certifications */}
-            <Certifications />
+            {/* Footer */}
+            <Footer />
+            
         </div>
     );
 }

@@ -43,12 +43,14 @@ import {
                             plates, showcasing innovative computer vision techniques.
                         </Typography>
 
-                        <Button className="flex items-center gap-3" style={{ backgroundColor: '#3BBA9C' }}>
-                            See More
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                                <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
-                            </svg>
-                        </Button>
+                        <a href="https://www.kaggle.com/code/vincentsuhardi/vehicle-plate-detection-ocr" target="_blank">
+                            <Button className="flex items-center gap-3" style={{ backgroundColor: '#3BBA9C' }}>
+                                See More
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                                    <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                                </svg>
+                            </Button>
+                        </a>
 
                     </TimelineBody>
                 </div>
@@ -97,12 +99,14 @@ import {
                         decision-making.
                         </Typography>
 
-                        <Button className="flex items-center gap-3" style={{ backgroundColor: '#3BBA9C' }}>
-                            See More
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                                <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
-                            </svg>
-                        </Button>
+                        <a href="https://public.tableau.com/app/profile/vincent.suhardi/viz/DataScienceChallenge-DSI/MainDashboard" target="_blank">
+                            <Button className="flex items-center gap-3" style={{ backgroundColor: '#3BBA9C' }}>
+                                See More
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                                    <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                                </svg>
+                            </Button>
+                        </a>
 
                     </TimelineBody>
                 </div>
@@ -111,6 +115,59 @@ import {
                     <img
                         className="rounded-xl object-center shadow-xl shadow-blue-gray-900/50"
                         src={process.env.PUBLIC_URL + '/image/tableau_dashboard.png'}
+                        alt="Tableau Dashboard"
+                    />
+                </div>
+
+            </div>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineConnector />
+
+            <div className="flex flex-row">
+            
+                <div>
+                    <TimelineHeader>
+                    <TimelineIcon className="p-2 z-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                            <path fillRule="evenodd" d="M5.625 1.5H9a3.75 3.75 0 0 1 3.75 3.75v1.875c0 1.036.84 1.875 1.875 1.875H16.5a3.75 3.75 0 0 1 3.75 3.75v7.875c0 1.035-.84 1.875-1.875 1.875H5.625a1.875 1.875 0 0 1-1.875-1.875V3.375c0-1.036.84-1.875 1.875-1.875ZM9.75 17.25a.75.75 0 0 0-1.5 0V18a.75.75 0 0 0 1.5 0v-.75Zm2.25-3a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Zm3.75-1.5a.75.75 0 0 0-1.5 0V18a.75.75 0 0 0 1.5 0v-5.25Z" clipRule="evenodd" />
+                            <path d="M14.25 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 16.5 7.5h-1.875a.375.375 0 0 1-.375-.375V5.25Z" />
+                        </svg>
+                    </TimelineIcon>
+                    <Typography variant="h5" color="white" className="font-primary" style={{ color: '#3BBA9C' }}>
+                        E-Commerce Analysis Dashboard
+                    </Typography>
+                    </TimelineHeader>
+                    <TimelineBody className="pb-8 w-[700px]">
+                    <Typography color="white" className="font-primary text-justify mb-5">
+                        Conducted a comprehensive and robust analysis of customer purchasing behavior over a year using an extensive 
+                        American e-commerce dataset in the form of an interactive dashboard. The analysis aimed to uncover insights into 
+                        customers' online buying habits and improve business strategies. Key insights obtained can be seen in the 
+                        following:
+                        <ul className="list-disc list-inside mt-2">
+                            <li>Identified profit distributions based on platforms used, product categories, and payment methods from customer orders.</li>
+                            <li>Analyzed sales performance through monthly order trends where the last few quarters provided greater sales than the previous quarters.</li>
+                            <li>Found out that most of the customers who frequently ordered are members of the commerce.</li>
+                        </ul>
+                    </Typography>
+
+                    <a href="https://public.tableau.com/app/profile/vincent.suhardi/viz/Hands-On3SISTECH2024/MainDashboard" target="_blank">
+                        <Button className="flex items-center gap-3" style={{ backgroundColor: '#3BBA9C' }}>
+                            See More
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                                <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
+                            </svg>
+                        </Button>
+                    </a>
+
+                    </TimelineBody>
+                </div>
+
+                <div className="w-full h-full ml-10 mr-10 mt-20">
+                    <img
+                        className="rounded-xl object-center shadow-xl shadow-blue-gray-900/50"
+                        src={process.env.PUBLIC_URL + '/image/ecommerce-sistech.png'}
                         alt="Tableau Dashboard"
                     />
                 </div>
@@ -142,17 +199,10 @@ import {
                             Vincent's professional journey.
                         </Typography>
 
-                        <Button className="flex items-center gap-3" style={{ backgroundColor: '#3BBA9C' }}>
-                            See More
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                                <path fillRule="evenodd" d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
-                            </svg>
-                        </Button>
-
                     </TimelineBody>
                 </div>
 
-                <div className="w-full h-full ml-10 mr-10 mt-6">
+                <div className="w-full h-full ml-10 mr-10 mt-2">
                     <img
                         className="rounded-xl object-center shadow-xl shadow-blue-gray-900/50"
                         src={process.env.PUBLIC_URL + '/image/web-showcase.png'}
@@ -171,7 +221,7 @@ import {
                     <path fillRule="evenodd" d="M21 12.75a.75.75 0 1 0 0-1.5h-.783a8.22 8.22 0 0 0-.237-1.357l.734-.267a.75.75 0 1 0-.513-1.41l-.735.268a8.24 8.24 0 0 0-.689-1.192l.6-.503a.75.75 0 1 0-.964-1.149l-.6.504a8.3 8.3 0 0 0-1.054-.885l.391-.678a.75.75 0 1 0-1.299-.75l-.39.676a8.188 8.188 0 0 0-1.295-.47l.136-.77a.75.75 0 0 0-1.477-.26l-.136.77a8.36 8.36 0 0 0-1.377 0l-.136-.77a.75.75 0 1 0-1.477.26l.136.77c-.448.121-.88.28-1.294.47l-.39-.676a.75.75 0 0 0-1.3.75l.392.678a8.29 8.29 0 0 0-1.054.885l-.6-.504a.75.75 0 1 0-.965 1.149l.6.503a8.243 8.243 0 0 0-.689 1.192L3.8 8.216a.75.75 0 1 0-.513 1.41l.735.267a8.222 8.222 0 0 0-.238 1.356h-.783a.75.75 0 0 0 0 1.5h.783c.042.464.122.917.238 1.356l-.735.268a.75.75 0 0 0 .513 1.41l.735-.268c.197.417.428.816.69 1.191l-.6.504a.75.75 0 0 0 .963 1.15l.601-.505c.326.323.679.62 1.054.885l-.392.68a.75.75 0 0 0 1.3.75l.39-.679c.414.192.847.35 1.294.471l-.136.77a.75.75 0 0 0 1.477.261l.137-.772a8.332 8.332 0 0 0 1.376 0l.136.772a.75.75 0 1 0 1.477-.26l-.136-.771a8.19 8.19 0 0 0 1.294-.47l.391.677a.75.75 0 0 0 1.3-.75l-.393-.679a8.29 8.29 0 0 0 1.054-.885l.601.504a.75.75 0 0 0 .964-1.15l-.6-.503c.261-.375.492-.774.69-1.191l.735.267a.75.75 0 1 0 .512-1.41l-.734-.267c.115-.439.195-.892.237-1.356h.784Zm-2.657-3.06a6.744 6.744 0 0 0-1.19-2.053 6.784 6.784 0 0 0-1.82-1.51A6.705 6.705 0 0 0 12 5.25a6.8 6.8 0 0 0-1.225.11 6.7 6.7 0 0 0-2.15.793 6.784 6.784 0 0 0-2.952 3.489.76.76 0 0 1-.036.098A6.74 6.74 0 0 0 5.251 12a6.74 6.74 0 0 0 3.366 5.842l.009.005a6.704 6.704 0 0 0 2.18.798l.022.003a6.792 6.792 0 0 0 2.368-.004 6.704 6.704 0 0 0 2.205-.811 6.785 6.785 0 0 0 1.762-1.484l.009-.01.009-.01a6.743 6.743 0 0 0 1.18-2.066c.253-.707.39-1.469.39-2.263a6.74 6.74 0 0 0-.408-2.309Z" clipRule="evenodd" />
                 </svg>
               </TimelineIcon>
-              <Typography variant="h5" color="white" className="font-primary" style={{ color: '#3BBA9C' }}>
+              <Typography variant="h5" color="white" className="font-primary bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
                 More to come . . .
               </Typography>
             </TimelineHeader>
