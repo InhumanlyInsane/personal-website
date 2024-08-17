@@ -1,16 +1,40 @@
 import {
     Carousel,
+    IconButton
 } from "@material-tailwind/react"; 
 import { HorizontalCard } from "./HorizontalCard";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 export function OrgCarousel() {
 
   return (
 
     <Carousel
-      className="rounded-xl h-[400px] w-full mb-[90px]"
-      autoplay={true}
+      className="rounded-xl cs:h-[400px] cs:w-full xs:h-[610px] mb-16 cs:mx-0 xs:mx-4"
       loop={true}
+      autoplay={true}
+      prevArrow={({ handlePrev }) => (
+        <IconButton
+          variant="text"
+          color="white"
+          size="lg"
+          onClick={handlePrev}
+          className="!absolute top-2/4 xs:left-0 cs:left-4 -translate-y-2/4 rounded-3xl"
+        >
+          <Icon icon="mdi:keyboard-arrow-left" style={{ fontSize: '50px' }}/>
+        </IconButton>
+      )}
+      nextArrow={({ handleNext }) => (
+        <IconButton
+          variant="text"
+          color="white"
+          size="lg"
+          onClick={handleNext}
+          className="!absolute top-2/4 xs:right-0 cs:right-4 -translate-y-2/4 rounded-3xl"
+        >
+          <Icon icon="mdi:keyboard-arrow-right" style={{ fontSize: '50px' }}/>
+        </IconButton>
+      )}
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute bottom-4 left-2/4 flex -translate-x-2/4 gap-2">
           {new Array(length).fill("").map((_, i) => (

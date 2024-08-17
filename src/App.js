@@ -16,8 +16,8 @@ function App() {
         const sectionPosition = section.getBoundingClientRect().top + window.scrollY - navbarHeight;
     
         window.scrollTo({
-          top: sectionPosition,
-          behavior: 'smooth'
+            top: sectionPosition,
+            behavior: 'smooth'
         });
     };    
 
@@ -34,7 +34,7 @@ function App() {
             {/* Header Content */}
             <div className="text-white text-left cs:mx-20 flex cs:flex-row xs:flex-col items-center justify-between">
                 <div className="cs:w-2/3 xs:w-10/12">
-                    <h1 className="cs:text-5xl xs:text-xl font-bold font-primary cs:mt-20 xs:mt-6">Developing & Innovating</h1>
+                    <h1 className="cs:text-5xl xs:text-2xl font-bold font-primary cs:mt-20 xs:mt-6">Developing & Innovating</h1>
                     <div className="cs:mt-2">
                         <TypeAnimation
                             sequence={[

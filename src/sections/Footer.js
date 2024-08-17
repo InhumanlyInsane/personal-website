@@ -37,13 +37,16 @@ export function Footer() {
               size="md"
           />
 
-          <Typography className="font-primary text-white">
-          Last Commit: {lastCommit ? lastCommit : 'Loading...'}
+          <Typography className="font-primary text-white xs:hidden cs:block">
+            Last Commit: {lastCommit ? lastCommit : 'Loading...'}
+          </Typography>
+          <Typography className="font-primary text-white xs:block cs:hidden">
+            Follow and connect with me
           </Typography>
         </div>
 
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-6">
-          <Typography className="font-primary text-white">Follow and connect with me</Typography>
+          <Typography className="font-primary text-white xs:hidden cs:block">Follow and connect with me</Typography>
             <a href="https://www.linkedin.com/in/vincent-suhardi/" target="_blank">
               <li>
                 <IconButton variant="text">

@@ -9,6 +9,7 @@ import {
   IconButton,
   Avatar,
 } from "@material-tailwind/react";
+import { RightDrawer } from "./Drawer";
  
 export function StickyNavbar({ scrollToSection }) {
   const [openNav, setOpenNav] = React.useState(false);
@@ -103,31 +104,32 @@ export function StickyNavbar({ scrollToSection }) {
 
  
   return (
-    <Navbar id="navbar" className="sticky top-0 z-10 rounded-none px-8 h-12" color="teal" variant="gradient">
+    <Navbar id="navbar" className="sticky top-0 z-10 rounded-none cs:px-8 xs:px-4 h-12" color="teal" variant="gradient">
         <div className="flex items-center justify-between text-blue-gray-900 h-full">
-          <div className="flex gap-4 h-full mr-4 items-center">
+          <div className="flex cs:gap-4 xs:gap-2 h-full items-center">
               <Avatar
               src={process.env.PUBLIC_URL + '/image/brain-logo.jpeg'}
               alt="website icon"
               withBorder={true}
               color="teal"
               size="sm"
+              className=""
               />
 
               <Typography
               as="a"
               href="#"
               onClick={(e) => { e.preventDefault(); scrollToSection('#top')}}
-              className="cursor-pointer font-logo text-white text-lg"
+              className="cursor-pointer font-logo text-white cs:text-lg xs:text-base"
               >
                   vincent_suhardi
               </Typography> 
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="mr-2 hidden lg:block">{navList}</div>
+            <div className="mr-2 xs:hidden cs:block">{navList}</div>
 
-            <div className="border-l border-white mr-2 h-6"></div>
+            <div className="border-l border-white mr-2 h-6 xs:hidden cs:block"></div>
             
             <div className="flex items-center gap-0.5">
               <a href="https://www.linkedin.com/in/vincent-suhardi/" target="_blank">
@@ -140,27 +142,14 @@ export function StickyNavbar({ scrollToSection }) {
                   <Icon icon="mdi:github" width="30" height="30" color="white"/>
                 </IconButton>
               </a>
+              <div className="cs:hidden">
+                <RightDrawer scrollToSection={scrollToSection} />
+              </div>
             </div>
 
-            {/* <RightDrawer /> */}
-
           </div>
 
         </div>
-
-      {/* <MobileNav open={openNav}>
-        <div className="container mx-auto">
-          {navList}
-          <div className="flex items-center gap-x-1">
-            <Button fullWidth variant="text" size="sm" className="">
-              <span>Log In</span>
-            </Button>
-            <Button fullWidth variant="gradient" size="sm" className="">
-              <span>Sign in</span>
-            </Button>
-          </div>
-        </div>
-      </MobileNav> */}
 
     </Navbar>
   );

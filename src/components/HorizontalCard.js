@@ -8,27 +8,27 @@ import {
    
   export function HorizontalCard({ imageUrl, orgName, heading, description, link }) {
     return (
-      <Card className="w-full h-full mr-5 flex-row" style={ {background: "linear-gradient(to right bottom, #274060, #1B2845"} }>
+      <Card className="w-full h-full mr-5 cs:flex-row flex cs:items-stretch xs:items-center" style={ {background: "linear-gradient(to right bottom, #274060, #1B2845"} }>
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 w-2/5 shrink-0 rounded-r-none"
+          className="m-0 cs:w-2/5 cs:h-full shrink-0 cs:rounded-r-none xs:w-full xs:h-64 xs:rounded-none"
         >
           <img
             src={imageUrl}
             alt="card"
-            className="h-full w-full object-cover"
+            className="cs:h-full xs:h-64 w-full object-cover"
           />
         </CardHeader>
 
-        <CardBody className="w-[550px] flex flex-col justify-center">
-          <Typography variant="h6" className="mb-4 uppercase" style={{color: "#EFF1F3"}}>
+        <CardBody className="cs:w-[550px] xs:w-[300px] flex flex-col justify-center">
+          <Typography variant="h6" className="mb-4 uppercase cs:text-base xs:text-xs" style={{color: "#EFF1F3"}}>
             {orgName}
           </Typography>
-          <Typography variant="h4" color="white" className="mb-2" style={{color: "#3BBA9C"}}>
+          <Typography variant="h4" color="white" className="mb-2 cs:text-base xs:text-xs" style={{color: "#3BBA9C"}}>
             {heading}
           </Typography>
-          <Typography className="mb-4 font-normal text-justify" style={{color: "#DBD3D8"}}>
+          <Typography className="mb-4 font-normal text-justify cs:text-base xs:text-xs" style={{color: "#DBD3D8"}}>
             {description}
           </Typography>
           <div className="flex flex-row items-center">

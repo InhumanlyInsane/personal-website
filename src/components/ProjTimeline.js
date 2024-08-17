@@ -16,7 +16,7 @@ import {
           <TimelineItem>
             <TimelineConnector />
 
-            <div className="flex cs:flex-row xs:flex-col">
+            <div className="flex cs:flex-row xs:flex-col items-center">
                 
                 <div>
                     <TimelineHeader>
@@ -55,7 +55,7 @@ import {
                     </TimelineBody>
                 </div>
 
-                <div className="cs:w-full cs:h-full cs:w-1/2 cs:h-1/2 ml-10 mr-10 cs:mt-10">
+                <div className="cs:w-full cs:h-full cs:mt-10 xs:w-2/3 xs:h-2/3 xs:mb-6 ml-10 mr-10">
                     <img
                         className="rounded-xl object-center shadow-xl shadow-blue-gray-900/50 border-2 border-black"
                         src={process.env.PUBLIC_URL + '/image/cv_project1.jpeg'}
@@ -74,7 +74,7 @@ import {
           <TimelineItem>
             <TimelineConnector />
 
-            <div className="flex cs:flex-row xs:flex-col">
+            <div className="flex cs:flex-row xs:flex-col items-center">
             
                 <div>
                     <TimelineHeader>
@@ -111,7 +111,7 @@ import {
                     </TimelineBody>
                 </div>
 
-                <div className="cs:w-full cs:h-full xs:w-1/2 xs:w-1/2 ml-10 mr-10 cs:mt-10">
+                <div className="cs:w-full cs:h-full xs:w-2/3 xs:w-2/3 xs:mb-6 ml-10 mr-10 cs:mt-10">
                     <img
                         className="rounded-xl object-center shadow-xl shadow-blue-gray-900/50"
                         src={process.env.PUBLIC_URL + '/image/tableau_dashboard.png'}
@@ -125,7 +125,7 @@ import {
           <TimelineItem>
             <TimelineConnector />
 
-            <div className="flex cs:flex-row xs:flex-col">
+            <div className="flex cs:flex-row xs:flex-col items-center">
             
                 <div>
                     <TimelineHeader>
@@ -164,7 +164,7 @@ import {
                     </TimelineBody>
                 </div>
 
-                <div className="cs:w-full cs:h-full xs:w-1/2 xs:w-1/2 ml-10 mr-10 cs:mt-20">
+                <div className="cs:w-full cs:h-full xs:w-2/3 xs:w-2/3 xs:mb-6 ml-10 mr-10 cs:mt-20">
                     <img
                         className="rounded-xl object-center shadow-xl shadow-blue-gray-900/50"
                         src={process.env.PUBLIC_URL + '/image/ecommerce-sistech.png'}
@@ -178,7 +178,7 @@ import {
           <TimelineItem>
             <TimelineConnector />
 
-            <div className="flex cs:flex-row xs:flex-col">
+            <div className="flex cs:flex-row xs:flex-col items-center">
                 <div>
                     <TimelineHeader>
                     <TimelineIcon className="p-2 z-0">
@@ -190,7 +190,7 @@ import {
                         Personal Website
                     </Typography>
                     </TimelineHeader>
-                    <TimelineBody className="pb-8 cs:w-[700px] xs:mr-6">
+                    <TimelineBody className="cs:w-[700px] xs:mr-6">
 
                         <Typography color="white" className="font-primary text-justify mb-5 xs:text-xs cs:text-base">
                             This platform, constructed using ReactJS and TailwindCSS for frontend aesthetics serves as a comprehensive showcase. Explore a 
@@ -202,7 +202,7 @@ import {
                     </TimelineBody>
                 </div>
 
-                <div className="cs:w-full cs:h-full xs:w-1/2 xs:w-1/2 ml-10 mr-10 cs:mt-2">
+                <div className="cs:w-full cs:h-full xs:w-2/3 xs:w-2/3 xs:mb-6 ml-10 mr-10 cs:mt-2">
                     <img
                         className="rounded-xl object-center shadow-xl shadow-blue-gray-900/50"
                         src={process.env.PUBLIC_URL + '/image/web-showcase.png'}
