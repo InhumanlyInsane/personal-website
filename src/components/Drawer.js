@@ -55,7 +55,7 @@ export function RightDrawer({ scrollToSection }) {
                 className="p-4 w-2/3 bg-gradient-to-b from-gray-900 to-black"
             >
                 <div className="mb-2 flex items-center justify-between">
-                    <Typography variant="h5" className="bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
+                    <Typography variant="h5" className="bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent font-logo">
                         Navigation
                     </Typography>
                     <IconButton
