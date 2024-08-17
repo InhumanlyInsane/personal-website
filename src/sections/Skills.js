@@ -8,7 +8,7 @@ class Skills extends React.Component {
             <div className="mb-20">
                 <h1 className="cs:text-5xl xs:text-3xl text-white font-bold font-primary cs:mb-[50px] xs:mb-[10px] cs:ml-20 xs:ml-8">Skillsets</h1>
 
-                <div className="mt-6 cs:mx-10 xs:mx-4 grid cs:grid-cols-4 xs:grid-cols-2 cs:gap-11 xs:gap-4 xs:gap-y-4">
+                <div className="mt-6 cs:mx-10 xs:mx-4 grid cs:grid-cols-4 xs:grid-cols-2 cs:gap-11 xs:gap-4 xs:gap-y-4 flex justify-center">
                     <SkillCard 
                         firstIcon={"devicon:pandas"}
                         skill={"Data Manipulation"}

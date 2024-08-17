@@ -32,7 +32,7 @@ export function SkillCard({ firstIcon, secondIcon, thirdIcon, skill, specific, c
     return (
 
         
-        <Card shadow={false} className="cs:w-[250px] xs:w-[170px] pb-6 hover:scale-110 transition ease-in-out" style={ {background: "linear-gradient(to right bottom, #2E3047, #43455C"} }>
+        <Card shadow={false} className="cs:w-[250px] xs:w-[160px] pb-4 hover:scale-110 transition ease-in-out" style={ {background: "linear-gradient(to right bottom, #2E3047, #43455C"} }>
 
             <div className={`cs:mt-[-20px] cs:ml-5 xs:mt-[-5px] xs:ml-2 flex flex-row gap-2`}>
                 <div className={circled ? `rounded-full bg-white cs:w-[${iconSize}px] flex justify-center items-center` : ''}>
